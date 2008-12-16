@@ -13,4 +13,4 @@ The following directories and their contents are Copyright Ryan Lowe. You may no
 
 All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to http://github.com/mojombo/jekyll would be appreciated, but is not required.
 
-This page was copied and modified from the original at http://github.com/mojombo/tpw/tree/master/README.textile
+This page was copied and modified from the "original by Tom Preston-Werner":http://github.com/mojombo/tpw/tree/master/README.textile
