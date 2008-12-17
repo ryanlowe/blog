@@ -1,0 +1,56 @@
+---
+layout: post
+title: The Flying Gas Can: Agile Alone
+---
+
+h1. {{ page.title }}
+
+My first goal with this blog is to explain a new project I'm working on called "Lighterest":http://lighterest.com.  It's a lightweight project management tool, the lightest I can possibly make.  In order to properly explain where the ideas for Lighterest came from and are coming from I think I need to talk about some personal history first.
+
+Back when I was at the University of Ottawa studying Software Engineering, I was also playing with software on the side as well as at co-op jobs.  I didn't learn about agile development at school.  Some time in the early 2000's I picked up the first Extreme Programming (XP) book, the white one.  Since I wasn't biased by years of work experience I took a very optimistic and naive view of it.
+
+The simple idea that people didn't know what they wanted until it was in front of them made a lot of sense.  So did the fact that software design, architecture and estimation is all guess work.  The idea is that after years of experience, you should be able to make better guesses.  I wasn't satisfied with this.
+
+I also wasn't satisfied with the analogies I was surrounded with at school and work: software is like architecture or engineering.  These analogies only go so far and then fall down on themselves, ironically.
+
+I took an 8 month hiatus after graduation -- instead of a 2 month trip to Europe -- and just programmed for fun.  I attempted to make a fat client iTunes variant for managing huge music collections, tagging and backups.  It was written in Java with the Eclipse Rich Client Platform.  And it was written with a whole lot of tests.  That was my first introduction to two things: working alone to scratch an itch and writing lots of tests.  I liked both immediately.
+
+After the hiatus I took a job with a small software firm that only lasted 8 months.  The most valuable lesson I learned there is: it's damn easy to start a business.  Around the same time (May 2005) I discovered Ruby on Rails.  Rails' emphasis on testing and agile development appealed to me instantly and I was hooked.  The timing was right so I started my own business.
+
+Nevermind that the webapp idea was overly ambitious, that didn't seem to matter.  In hindsight, the project gave me a year of full-time experience using Rails that I then parlayed into a successful freelancing career.  The project failed spectacularly, of course.  But it was my first serious effort of working alone with agile and testing.
+
+What did I learn?  Working alone is really hard.  It seems easy because you can do anything you want.  But it's hard because you don't have anyone else to motivate you or to question your decisions to avoid mistakes.  So you make a lot of mistakes.  This is the perfect environment for agile development though: you make a mistake and you have the freedom and flexibility to change course.
+
+h2. Process
+
+Inspired by the bare bones approach of XP, it didn't take me long to figure out a process: I didn't make one.  I started out completely ad hoc.  When something about the non-process started hurting, I added some degree of process to help out.
+
+h3. Tasks
+
+The first thing that hurt were ideas.  There were a ton and I was getting them constantly, while I was working or not.  I quickly ran out of room in my head, so I started writing the ideas on paper, on the back of a small desk calendar I had.  Pretty soon the calendar was gone and I started using cue cards instead.
+
+The process was simple: write out ideas point form as they came to get them out of my brain, that way I could continue working on the task in front of me.  As I finished ideas, I highlighted them (instead of crossing them off, preserving legibility).  When a sheet of paper had all highlighted items it went in a pile in my cupboard, out of the way.  If a sheet stuck around because one or two things never got done, I'd move those things to a fresh sheet and retired the old sheet to the cupboard.
+
+Sometimes I had sheets of only crazy ideas I knew would never get done.  Sometimes I had sheets of quick little things that quickly got done.  A few months into it, I had a pile of sheets on my desk.  It was more than manageable and above all, it was very efficient.
+
+h3. Milestones and Version Numbers
+
+A lot of projects have milestones and version numbers.  Mine didn't need them.  This was before Capistrano -- I just had a simple shell script on the server to update the code, the database schema and do a restart.  I keep the shell open all of the time and updated regularly, several times a day right after I made commits.  Then people could see their changes as soon as I made them.
+
+I had a limited pool of friends testing, then I opened it up to the public.  I wanted to encourage feedback so I needed to respond to feedback quickly.  If someone made a good suggestion I wanted to show them how quickly I got it working.  If someone found a bug I wanted to be able to fix it right away.  When people know you are responding to their feedback, they are more likely to give more feedback.
+
+Instead of version numbers and regular milestones the project was updated several times a day.  Tasks weren't organized into milestones, they were completed in the order I thought they should be done and they were deployed immediately.  This kind of development is less formal but a lot faster.
+
+h2. Why not Bugzilla?
+
+Turns out I didn't come to need Bugzilla to do my work, so I didn't start using it.  This is because I started from no process at all and worked my way up.  Tools like Bugzilla are mostly about communication and I was working alone.  Bugzilla would have added unnecessary overhead to my process for no gain.
+
+h2. Problems
+
+A lot of paper.  Paper everywhere.  It wasn't easy to see what to do next.  Every time I sat down to work I needed to review the sheets and pick the next thing to work on.  Crazy ideas on the sheets were constantly in front of my eyes, distracting me from more important tasks.
+
+The biggest problem was more basic: my code and database were backed up off-site but my tasks were not.  They were on paper.  They could be lost, damaged or burned in an apartment fire.  I was trusting the future of my project to simple paper.  At the time I didn't think of it as a problem but in hindsight it was incredibly risky.
+
+h2. The Next Step
+
+Working alone was fun but troublesome.  I learned a ton of practical things about fast development because my process was the bare minimum needed.  No checks and balances, no paycheque and a lot of risk.  From there I moved on to freelancing, which is where the process got more interesting.  That's in the next blog post.
