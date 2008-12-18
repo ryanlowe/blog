@@ -1,0 +1,56 @@
+---
+layout: post
+title: Communication Needed: The Single Client
+---
+
+h1. {{ page.title }}
+
+After my spectacular startup failure I had a year of full-time experience with Ruby on Rails, which was not even 2 years old at that point.  Not very many people had this much experience and soon I was receiving full time job inquiries.  Except I didn't want a full time job.  During that year of working on my own stuff, I got a little too used to the flexible hours and working from home.  I wanted to keep doing that - except get paid for it.  Freelance software development was the answer.
+
+I wanted to do a few things differently from the consulting I knew about.  I didn't want to work 9-5 days, I wanted to bill by the quarter hour.  I only wanted to do agile Rails development.  Thankfully I had some great early clients who helped me refine an agile process into the one I use today.  But first I needed a starting point.  Instead of starting with absolutely nothing, I started with the lessons I learned while working alone for that first year.
+
+Most of my clients found me online through my blog.  Later on, others were referred by past clients.  My clients didn't need to be in the same city, so I had a much greater pool of potential clients.  All of the work was done by email, IM or phone.  Every client I've had was either one person or the team had a single point man to talk to.  This helps agility tremendously because it leaves one line of communication for the project as far as I was concerned: between myself and one other person.
+
+h2. Communication and Software
+
+Software is all about communication.  Software is about taking abstract ideas in people's heads, agreeing on how to do things and then making them happen in a completely virtual space.  The only way you can do this is by communicating with the other stakeholders.  The only exception is when you work alone and I've already talked about the disadvantages of that process, even though it's lean.
+
+As the number of stakeholders grows, the communication "grows approximately by its square":http://answers.yahoo.com/question/index?qid=20080104110111AAoY7rG.  Two people have 1 line of communication, three people have 3 lines, four people have 6, and five people have 10 lines of communication.  As a team grows a greater percentage of each person's time (on average) is spent communicating instead of doing other project work, like development or testing.
+
+This communications problem was covered by Fred Brooks in the book Mythical Man Month.  It's one of the reasons why adding people to a late project only makes it later.  Those new people have to catch up, and the only people that can catch them up are old people.  That means the old people are doing more communicating and less development while they teach the new people and the project slows down.  Once the new people are caught up, overall the project might still be slower because of the increased communication that needs to happen.
+
+h3. One on One
+
+Communicating with a single client is extremely fast because you don't have to convene meetings and you don't have to CC the team.  You just talk -- and you talk on whatever medium is most natural for the discussion.  Some clients prefer to use the phone and others prefer email or IM so they have records of discussions.  The obvious secret to fast communication is to communicate over efficient media.  Since the software development process depends on communication, fast communication means a fast software development process.
+
+h2. Go Digital
+
+When I first started freelancing I used the paper lists again.  With a client in the communications mix, this presents a few problems.  First of all, clients come up with a lot more ideas.  When I was working alone, I could filter crazy ideas and keep them off my paper lists if they didn't work right now or I could put them on a crazy ideas list.  But with clients I wanted to encourage brainstorming and prioritization, so all ideas were fair game.  Sometimes a crazy idea now is a great idea in a month.  After a while some of the lists got quite long, with longshot ideas that wouldn't be implemented any time soon.
+
+When I was looking for the next thing to do, the many pieces of paper made it difficult.  Working alone, task prioritization was done on the fly.  Now it's part of the communication between myself and the client.  I let my client choose the order I implement new features, so they need to tell me what to do next.  Some clients tell me 5 or so things to do at a time.  They look at the project, look at the remaining ideas and tell me the next ones they want done.
+
+But how can they see the list of ideas left to implement them if they are on paper on my desk?  This is how I knew I had to go to a digital solution: I had to share a list of continually changing todo items.  Things were constantly being added to this list and removed as I implemented them.
+
+h3. TODO
+
+So I made a simple TODO text file in the root of the Rails project directory, which is checked into source control with the rest of the project files.  Versioning TODO had lots of advantages, especially having an offsite backup.  But the biggest advantage was sharing.  I could just give my client the URL to the TODO file in their SVN repository (which worked over HTTP anyway) and they could see the TODO list whenever they wanted.  When they wanted to add or remove things from TODO, they emailed me and I changed it.
+
+h2. Prioritization
+
+The order things are added to the project is big for agile development.  When freelancing, it's important that the client see value for their money.  Instead of going away for a few weeks and showing a finished project at the end, I get a basic webapp up very quickly and continually enhance it.  The client can see the webapp working right away and can give feedback as the features are added.
+
+Sometimes clients need help seeing pieces that will have a big impact and should be roughed in early on, especially if the issues are technical.  Most of the time clients prioritize simply by features.  It's up to the developer to prioritize technical tasks within the client's priorities.
+
+In order to communicate prioritization, I did something very simple to TODO: I ordered the top of it.   Why not all of it?  Because the client would be prioritizing all day alone.  It's not important to prioritize everything, just the next 3 to 12 things.  That's enough work for the developer to do until the client can look at the deployed project with the new features and prioritize the next batch of features.
+
+You could call these bactches of features milestones but it's much less formal.  Some clients prioritize approximately weekly, others daily, but no one sticks to a consistent schedule.  If a client is managing risk - the risk that their money isn't buying the software they want - they will re-prioritize whenever they feel like it.  The process should take this into account.
+
+h2. Secondary
+
+The TODO file becomes a secondary communication medium, not a primary one.  From my client's perspective it's read-only but still informative.  A couple of my clients don't even bother looking at it.  It's secondary because I still discuss by email, phone or IM about new features with my client and what order to do them in.  That line of communication is natural and faster.  The TODO list becomes an archive of ideas left to do, especially the crazy ones that just fall to the bottom of the list.  I'm only looking near the top of the list for things to add to the project next, so the bottom of that long list doesn't bother me.
+
+h2. Mature Projects
+
+...until it did bother me.  After a year of work, one client had a TODO list over 100 items long, 60+ of which were probably never going to happen.  After a while this became unmanagable.  When I started adding duplicate tasks by accident, I knew the list was too long.  I needed another solution, so I went even more digital: I went Lighterest.
+
+So that's some history.  I'll talk about the evolution of Lighterest in the next post.
